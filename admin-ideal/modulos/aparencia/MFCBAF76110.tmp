@@ -1,0 +1,64 @@
+<?php
+include "../../config/conn.php";
+  
+$nome = $_POST['nome'];
+$valor = $_POST['valor'];
+
+function soNumero($str) {
+    return preg_replace("/[^0-9]/", "", $str);
+}
+
+$resutado = strpos($nome, 'r');
+if ($resutado == 1) {
+  
+        $filtro = substr($nome, -1);
+        $termo = "nome$filtro";
+    
+        echo $termo;
+    die;
+       // $termo = strval($termo);
+    
+        //$filtro = soNumero($nome);
+       // $filtroo = "nome$filtro";
+        //$variavel = intval($filtroo);
+        
+     
+        $query = mysqli_query($conn, "SELECT nome FROM ideal_menu where nome = $termo limit 1");
+        $sql = mysqli_fetch_assoc($query);
+        $nome1 = $sql['nome'];
+   
+        if($nome1 == $nome){
+            $insert = mysqli_query($conn, "UPDATE ideal_menu SET link='$valor' where nome = $nome1");
+        }
+    
+    
+} else {
+    
+    $insert = mysqli_query($conn, "INSERT INTO ideal_menu(nome, texto, link, sub) VALUES('". $nome ."', '". $valor ."', '', '0')");
+}
+
+
+
+
+die;
+
+
+
+
+if($name1 != $name){
+   /* if (strpos($name, 'sub') !== true || strpos($name, 'link') !== true) {
+        $insert = mysqli_query($conn, "INSERT INTO ideal_menu(nome, texto, link, sub) VALUES('". $name ."', '". $valor ."', '', '0')");
+    }
+    else{*/
+        $insert = mysqli_query($conn, "INSERT INTO ideal_menu(nome, texto, link, sub) VALUES('". $name ."', '". $valor ."', '', '1')");
+    /*}*/
+}
+
+mysqli_close($conn);
+if($insert) {
+	print "<strong>Parabéns!</strong> Sua alteração foi salva";
+}else {
+	print "<strong>Erro!</strong> " . mysqli_error($conn);
+}
+
+?>

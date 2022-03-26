@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin-ideal
+Disallow: /admin-xxx
+
+Sitemap: https://gomara.tech/sitemap.xml

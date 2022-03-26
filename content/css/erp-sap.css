@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**bg-erp-sap**/
+
+.bg-erp-sap {
+    background: url(../img/bg-erp-sap.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 570px;
+    padding: 140px 0;
+}
+
+.bg-erp-sap h3 {
+    width: 201px;
+    height: 36px;
+    background: #FBC603;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg-erp-sap h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120.4%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 75px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg-erp-sap h1 span {
+    color: var(--amarelo);
+}
+
+.bg-erp-sap i {
+    background: url(../img/arrow-bottom.png) no-repeat center;
+    width: 49px;
+    height: 49px;
+    display: block;
+    margin: 0 auto;
+    animation: anima 1500ms ease infinite;
+    cursor: pointer;
+}
+
+@keyframes anima {
+    to {
+        opacity: 0.01;
+        transform: scale(0.85) translateY(40px);
+    }
+}
+
+
+/**bg-erp-sap///**/
+
+
+/**description-erp-sap**/
+
+.description-erp-sap {
+    background-image: url(../img/bg-standard.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: -150px center;
+    width: 100%;
+    padding: 75px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.description-erp-sap:before {
+    margin: 0 auto;
+    display: block;
+    content: "";
+    background: var(--amarelo);
+    width: 59%;
+    height: 21px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    bottom: 0;
+}
+
+.description-erp-sap h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 134.4%;
+    color: #20292D;
+    font-family: 'Raleway', sans-serif;
+    padding: 102px 0 0 38px;
+}
+
+.description-erp-sap p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 158.4%;
+    color: #304048;
+    font-family: 'Raleway', sans-serif;
+}
+
+.description-erp-sap p span {
+    color: var(--amarelo);
+    font-weight: 800;
+}
+
+.description-erp-sap ul {
+    padding: 0;
+}
+
+.description-erp-sap ul li {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 189.4%;
+    color: #304048;
+    font-family: 'Raleway', sans-serif;
+    margin: 23px 0;
+}
+
+
+/**description-erp-sap///**/
+
+
+/**items-erp-sap**/
+
+.items-erp-sap {
+    background: #F6F6FA;
+    padding: 130px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.box-items-erp-sap {
+    background: #FFFFFF;
+    border: 1px solid #EAEAF2;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 30px #E7E7FB;
+    height: 270px;
+    padding: 35px 49px;
+    margin: 0 10px;
+}
+
+.box-items-erp-sap:before {
+    content: "";
+    border: 3px solid #E0E0E0;
+    width: 139px;
+    height: 302px;
+    top: -15px;
+    left: 5px;
+    position: absolute;
+    z-index: -1;
+}
+
+.box-items-erp-sap:hover:before {
+    content: "";
+    border: 3px solid #FBC603;
+    width: 139px;
+    height: 302px;
+    top: -15px;
+    left: 5px;
+    position: absolute;
+    z-index: -1;
+}
+
+.box-items-erp-sap i {
+    width: 83px;
+    height: 83px;
+    background: #FBC603;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.box-items-erp-sap i.icon-ams-sap {
+    background-image: url(../img/icon-ams-sap.svg);
+}
+
+.box-items-erp-sap i.icon-desenvolvimento {
+    background-image: url(../img/icon-desenvolvimento.svg);
+}
+
+.box-items-erp-sap i.icon-body-shop {
+    background-image: url(../img/icon-body-shop.svg);
+}
+
+.box-items-erp-sap h3 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 134.4%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #304048;
+    font-family: 'Raleway', sans-serif;
+}
+
+.box-items-erp-sap p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 134.4%;
+    text-align: center;
+    color: #304048;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/**items-erp-sap///**/
+
+@media(min-width: 1200px) and (max-width: 1600px) {}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+    .description-erp-sap h3 {
+        font-size: 36px;
+        padding: 130px 0;
+    }
+    /**/
+    .box-items-erp-sap {
+        padding: 35px 18px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .bg-erp-sap h1 {
+        font-size: 25px;
+    }
+    .bg-erp-sap {
+        height: 390px;
+        padding: 80px 0;
+    }
+    /***/
+    .description-erp-sap h3 {
+        font-size: 30px;
+        padding: 145px 0;
+    }
+    .description-erp-sap p {
+        font-size: 15px;
+    }
+    .description-erp-sap ul li {
+        font-size: 15px;
+        line-height: 147.4%;
+        margin: 10px 0;
+    }
+    /**/
+    .box-items-erp-sap {
+        padding: 35px 16px;
+        margin: 0;
+    }
+    .box-items-erp-sap h3 {
+        font-weight: 800;
+        font-size: 15px;
+    }
+    /***/
+    .bg-solucao-comercio-homologada h3 {
+        font-size: 25px !important;
+    }
+}
+
+@media(min-width: 541px) and (max-width: 767px) {}
+
+@media(min-width: 0px) and (max-width: 540px) {}
+
+@media(min-width: 0px) and (max-width: 767px) {
+    .bg-erp-sap h1 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .bg-erp-sap {
+        height: 390px;
+        padding: 80px 0;
+    }
+    /***/
+    .description-erp-sap h3 {
+        font-size: 24px;
+        text-align: center;
+        padding: 0 0 22px 0;
+    }
+    .description-erp-sap p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .description-erp-sap ul li {
+        font-size: 17px;
+        line-height: 154.4%;
+        margin: 9px 0;
+        list-style: none;
+        text-align: center;
+    }
+    /**/
+    .box-items-erp-sap {
+        margin: 30px 10px;
+    }
+    .box-items-erp-sap:before,
+    .box-items-erp-sap:hover:before {
+        top: 4px;
+        left: -17px;
+        right: 0;
+        width: 124px;
+        height: 88px;
+        border: 2px solid #E0E0E0;
+    }
+    /**/
+    .bg-solucao-comercio-homologada h3 {
+        font-size: 20px !important;
+    }
+    .items-erp-sap {
+        padding: 65px 18px;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 991px) {}

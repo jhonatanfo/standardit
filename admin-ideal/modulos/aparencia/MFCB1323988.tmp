@@ -1,0 +1,40 @@
+<?php
+include "../../config/conn.php";
+  
+$name = $_POST['name'];
+$valor = $_POST['valor'];
+
+function soNumero($str) {
+    return preg_replace("/[^0-9]/", "", $str);
+}
+
+$filtro = soNumero($name);
+
+$sql = "SELECT * FROM ideal_menu where id $filtro"; 
+$query = mysqli_query($conn, $sql); while($sql = mysqli_fetch_array($query)){ 
+$id = $sql["id"];
+
+
+
+
+$insert = mysqli_query($conn, "UPDATE ideal_dados SET telefone='$telefone', whatsapp='$whatsapp', email='$email', endereco='$endereco', geo='$geo'");
+
+
+
+
+if (strpos($name, 'sub') !== false || strpos($name, 'link') !== false) {
+    $insert = mysqli_query($conn, "INSERT INTO ideal_menu(nome, texto, link, sub) VALUES('', '". $name ."', '". $valor ."', '1')");
+}
+else{
+    $insert = mysqli_query($conn, "INSERT INTO ideal_menu(nome, texto, link, sub) VALUES('', '". $name ."', '". $valor ."', '0')");
+    $submnu = $name;
+}
+
+mysqli_close($conn);
+if($insert) {
+	print "<strong>Parabéns!</strong> Sua alteração foi salva";
+}else {
+	print "<strong>Erro!</strong> " . mysqli_error($conn);
+}
+
+?>

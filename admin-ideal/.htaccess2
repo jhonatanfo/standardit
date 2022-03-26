@@ -1,0 +1,9 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php72-script .php
+suPHP_ConfigPath /home/gomara1/
+##### LOCAWEB - NAO REMOVER #####
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

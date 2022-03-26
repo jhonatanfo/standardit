@@ -1,0 +1,419 @@
+    /**bg-suporte-ams**/
+    
+    .bg-suporte-ams {
+        background: url(../img/bg-suporte-ams.jpg) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 570px;
+        padding: 140px 0;
+    }
+    
+    .bg-suporte-ams h3 {
+        font-family: 'Raleway', sans-serif;
+        width: 201px;
+        height: 36px;
+        background: #FBC603;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #000000;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .bg-suporte-ams h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120.4%;
+        /* or 48px */
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 75px;
+    }
+    
+    .bg-suporte-ams h1 span {
+        color: var(--amarelo);
+    }
+    
+    .bg-suporte-ams i {
+        background: url(../img/arrow-bottom.png) no-repeat center;
+        width: 49px;
+        height: 49px;
+        display: block;
+        margin: 0 auto;
+        animation: anima 1500ms ease infinite;
+        cursor: pointer;
+    }
+    
+    @keyframes anima {
+        to {
+            opacity: 0.01;
+            transform: scale(0.85) translateY(40px);
+        }
+    }
+    /**bg-suporte-ams///**/
+    /**suporte-mercado**/
+    
+    .suporte-mercado {
+        background: #FFFFFF;
+        padding: 100px 0;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .suporte-mercado h2 {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 134.4%;
+        color: #20292D;
+        padding: 46px 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .suporte-mercado p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 158.4%;
+        color: #304048;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .suporte-mercado p b {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 158.4%;
+        color: #304048;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .box-suporte-mercado {
+        background: #FFFFFF;
+        border: 1px solid #EAEAF2;
+        box-sizing: border-box;
+        padding: 0 63px;
+        height: 228px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s;
+        box-shadow: 0px 4px 30px #E7E7FB;
+        margin: 35px 10px;
+    }
+    
+    .box-suporte-mercado:hover::before {
+        content: "";
+        border: 3px solid #FBC603;
+        width: 397px;
+        height: 256px;
+        top: -16px;
+        left: -19px;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .box-suporte-mercado i {
+        width: 69px;
+        height: 69px;
+        background-color: #C4C4C4;
+        display: block;
+        border-radius: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -27px;
+        margin-bottom: 20px;
+        transition: 0.2s;
+    }
+    
+    .box-suporte-mercado:hover i {
+        background-color: #FBC603;
+    }
+    
+    .box-suporte-mercado i.icon-service-desk {
+        background-image: url(../img/icon-service-desk.svg);
+    }
+    
+    .box-suporte-mercado i.icon-melhoria-continua {
+        background-image: url(../img/icon-melhoria-continua.svg);
+    }
+    
+    .box-suporte-mercado i.icon-rpa-automacao-processos {
+        background-image: url(../img/icon-rpa-automacao-processos.svg);
+    }
+    
+    .box-suporte-mercado i.icon-fabrica-software {
+        background-image: url(../img/icon-fabrica-software.svg);
+    }
+    
+    .box-suporte-mercado h2 {
+        font-weight: 800;
+        font-size: 22px;
+        color: #304048;
+        padding: 0;
+        line-height: 23px;
+    }
+    
+    .box-suporte-mercado h2 span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 134.4%;
+        color: #304048;
+    }
+    
+    .box-suporte-mercado p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 134.4%;
+        color: #304048;
+    }
+    /**suporte-mercado///**/
+    /**bg-destaque-suporte-ams**/
+    
+    .bg-destaque-suporte-ams {
+        background: url(../img/bg-destaque-suporte-ams.jpg) no-repeat center;
+        height: 346px;
+        background-size: cover;
+        width: 100%;
+        padding: 110px 0;
+        position: relative;
+        margin-top: 25px;
+    }
+    
+    .bg-destaque-suporte-ams h3 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 134.4%;
+        text-align: center;
+        color: #F6F6FA;
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+    }
+    
+    .bg-destaque-suporte-ams .container:before {
+        z-index: -1;
+        top: -30px;
+        margin: 0 auto;
+        display: block;
+        content: "";
+        background: var(--amarelo);
+        width: 59%;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    
+    .bg-destaque-suporte-ams .container:after {
+        margin: 0 auto;
+        display: block;
+        content: "";
+        background: var(--amarelo);
+        width: 59%;
+        height: 21px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        bottom: -21px;
+    }
+    /**bg-destaque-suporte-ams///**/
+    /**solucoes-suporte-ams**/
+    
+    .solucoes-suporte-ams {
+        background-image: url(../img/bg-standard.png);
+        background-repeat: no-repeat;
+        background-color: #F6F6FA;
+        background-size: 30%;
+        background-position: -150px center;
+        width: 100%;
+        padding: 75px 0;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .solucoes-suporte-ams h3 {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 134.4%;
+        text-align: center;
+        color: #20292D;
+        margin-bottom: 60px;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .box-solucoes-suporte-ams {
+        height: 171px;
+        background: #C4C4C4;
+        border: 1px solid #EAEAF2;
+        box-sizing: border-box;
+        padding: 63px 35px;
+        margin-bottom: 48px;
+        margin: 25px 13px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    .box-solucoes-suporte-ams:hover {
+        background-color: #FBC603;
+    }
+    
+    .box-solucoes-suporte-ams:hover::before {
+        content: "";
+        display: block;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 171px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px #e7e7fb;
+        left: 20px;
+        top: 15px;
+        transition: 0.2s;
+    }
+    
+    .box-solucoes-suporte-ams.two-line {
+        padding: 39px 35px;
+    }
+    
+    .box-solucoes-suporte-ams.three-line {
+        padding: 52px 35px;
+    }
+    
+    .box-solucoes-suporte-ams h4 {
+        font-weight: 800;
+        font-size: 17px;
+        line-height: 143.9%;
+        color: #20292D;
+        margin-bottom: 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .box-solucoes-suporte-ams p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 158.4%;
+        font-family: 'Raleway', sans-serif;
+        color: #20292D;
+    }
+    /**solucoes-suporte-ams///**/
+    
+    @media(min-width: 1200px) and (max-width: 1600px) {}
+    
+    @media(min-width: 992px) and (max-width: 1199px) {
+        .box-suporte-mercado h2 {
+            font-size: 19px;
+        }
+        .box-suporte-mercado {
+            padding: 0 40px;
+        }
+    }
+    
+    @media(min-width: 768px) and (max-width: 991px) {
+        .bg-suporte-ams h1 {
+            font-size: 25px;
+        }
+        .bg-suporte-ams {
+            height: 390px;
+            padding: 80px 0;
+        }
+        /***/
+        .suporte-mercado h2 {
+            font-size: 30px;
+            padding: 87px 0;
+        }
+        .suporte-mercado p,
+        .suporte-mercado p b {
+            font-size: 15px;
+        }
+        /**/
+        .box-suporte-mercado {
+            padding: 0 28px;
+            height: 313px;
+        }
+        .box-suporte-mercado h2 {
+            padding: 0 !important;
+            font-size: 17px !important;
+        }
+        .box-suporte-mercado:hover::before {
+            width: 80%;
+            height: 340px;
+        }
+        /**/
+        .bg-destaque-suporte-ams h3 {
+            font-size: 25px;
+        }
+        /***/
+        .box-solucoes-suporte-ams.two-line,
+        .box-solucoes-suporte-ams,
+        .box-solucoes-suporte-ams.three-line {
+            padding: 21px 16px;
+        }
+        .box-solucoes-suporte-ams h4 {
+            font-size: 15px;
+        }
+        .solucoes-suporte-ams h3 {
+            font-size: 25px;
+            margin-bottom: 36px;
+        }
+    }
+    
+    @media(min-width: 541px) and (max-width: 767px) {}
+    
+    @media(min-width: 0px) and (max-width: 540px) {}
+    
+    @media(min-width: 0px) and (max-width: 767px) {
+        .bg-suporte-ams h1 {
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+        .bg-suporte-ams {
+            height: 390px;
+            padding: 80px 0;
+        }
+        /***/
+        .suporte-mercado h2 {
+            font-size: 25px;
+            text-align: center;
+            padding: 0 0 22px 0;
+        }
+        .suporte-mercado p,
+        .suporte-mercado p b {
+            font-size: 16px;
+            text-align: center;
+        }
+        /**/
+        .box-suporte-mercado {
+            padding: 0 28px;
+            height: 313px;
+        }
+        .box-suporte-mercado h2 {
+            padding: 0 !important;
+            font-size: 17px !important;
+        }
+        .box-suporte-mercado:hover::before {
+            width: 150px;
+            height: 119px;
+            left: -24px;
+            right: inherit;
+            margin: 0 auto;
+            top: -28px;
+        }
+        .box-suporte-mercado i {
+            margin: 0 auto;
+            margin-bottom: 20px;
+            margin-top: -27px;
+        }
+        /**/
+        .bg-destaque-suporte-ams h3 {
+            font-size: 25px;
+        }
+        /***/
+        .solucoes-suporte-ams h3 {
+            font-size: 25px;
+            margin-bottom: 36px;
+        }
+    }
+    
+    @media(min-width: 0px) and (max-width: 991px) {}

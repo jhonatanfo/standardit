@@ -1,0 +1,42 @@
+<?php
+include "../../config/conn.php";
+  
+$name = $_POST['name'];
+$valor = $_POST['valor'];
+
+function soNumero($str) {
+    return preg_replace("/[^0-9]/", "", $str);
+}
+
+$filtro = soNumero($name);
+$filtro = "name$filtro";
+echo $filtro;
+die;
+
+$sql = "SELECT name FROM ideal_menu where name = 'name'" .$filtro; 
+$query = mysqli_query($conn, $sql); while($sql = mysqli_fetch_array($query)){ 
+echo $sql["name"];
+}
+
+
+
+$insert = mysqli_query($conn, "UPDATE ideal_dados SET telefone='$telefone', whatsapp='$whatsapp', email='$email', endereco='$endereco', geo='$geo'");
+
+
+
+
+if (strpos($name, 'sub') !== true || strpos($name, 'link') !== true) {
+    $insert = mysqli_query($conn, "INSERT INTO ideal_menu(nome, texto, link, sub) VALUES('". $name ."', '". $valor ."', '', '0')");
+}
+else{
+    $insert = mysqli_query($conn, "INSERT INTO ideal_menu(nome, texto, link, sub) VALUES('". $name ."', '". $valor ."', '', '1')");
+}
+
+mysqli_close($conn);
+if($insert) {
+	print "<strong>Parabéns!</strong> Sua alteração foi salva";
+}else {
+	print "<strong>Erro!</strong> " . mysqli_error($conn);
+}
+
+?>

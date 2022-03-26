@@ -1,0 +1,196 @@
+@charset "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+*:hover,
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+body,
+html {
+  height: 100%;
+  background: rgba(49, 28, 95, 1);
+}
+.login div div div {
+  padding: 0;
+}
+.login {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background: url("../img/bg4.png") no-repeat center / cover,
+    url("../img/bg1.png") no-repeat center bottom / cover,
+    url("../img/bg2.png") no-repeat center / cover,
+    #3b2973 url("../img/bg3.png") no-repeat center / cover;
+}
+.contrucao-menu .budget:hover,
+.contrucao-menu .budget.active {
+  color: #3c3284;
+}
+.area-login {
+  width: 50%;
+  position: absolute;
+  float: left;
+  left: 25%;
+  top: 10%;
+  font-weight: 700;
+  height: 600px;
+}
+.login .chamada-login {
+  width: 410px;
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  margin-left: -205px;
+  margin-top: -135px;
+  font-weight: 700;
+  height: 270px;
+}
+.login .chamada-login h2 {
+  color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.login .chamada-login p {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.login .chamada-login strong {
+  color: #85daff;
+}
+
+.box-login {
+  background: rgba(49, 28, 95, 0.9);
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.logo {
+  margin-bottom: 70px;
+}
+.box-login form label {
+  color: #fff;
+  font-weight: 700;
+}
+.box-login form .form-control {
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  background: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0;
+}
+.box-login form .form-control:focus {
+  border: none;
+  border-bottom: 1px solid #85daff;
+}
+.box-login form p {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 30px;
+  font-weight: 400;
+  float: left;
+  width: 100%;
+}
+.box-login h2 {
+  font-size: 11px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+  float: left;
+}
+.box-login h3 {
+  font-size: 12px;
+  color: #85daff;
+  font-weight: 400;
+  position: relative;
+  line-height: 16px;
+  width: 90%;
+  float: left;
+}
+.btn-acessar {
+  color: #85daff;
+  border-radius: 40px;
+  padding: 5px 30px;
+  font-size: 14px;
+  border: 2px solid #85daff;
+  background: none;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 20px;
+  transition: all ease 0.3s;
+}
+.btn-acessar:hover {
+  color: #fff;
+  background: #85daff;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .area-login {
+    width: 70%;
+    left: 16%;
+    top: 7%;
+  }
+  .btn-acessar {
+    float: left;
+  }
+  .box-login h2 {
+    margin-top: 30px;
+  }
+  .login {
+    background: none;
+  }
+  .logo {
+    margin-bottom: 25px;
+  }
+  .logo img {
+    width: 60px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .area-login {
+    width: 70%;
+    left: 15%;
+    top: 8%;
+  }
+  .box-login h2 {
+    margin-top: 50px;
+  }
+  .box-login form p {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .login .chamada-login {
+    width: 70%;
+    position: relative;
+    float: left;
+    left: 50%;
+    top: 50%;
+    margin-left: -35%;
+    margin-top: -55px;
+    font-weight: 700;
+    height: auto;
+  }
+  .box-login {
+    background: none;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    margin-top: 90px;
+  }
+  .box-login form p {
+    margin-top: 10px;
+  }
+  .btn-acessar {
+    margin-top: 10px;
+  }
+}

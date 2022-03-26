@@ -1,0 +1,43 @@
+<?php
+include "../../config/conn.php";
+  
+$nome = $_POST['nome'];
+$valor = $_POST['valor'];
+$link = $_POST['link'];
+$sub = $_POST['sub']; 
+
+if($sub == ""){
+    if($link == "true"){
+        sleep(2);
+        $insert = mysqli_query($conn, "UPDATE ideal_menu SET link='$valor' where nome = $nome");
+    } 
+    if ($link == "false") {        
+        
+        
+        
+        $sql = "UPDATE ideal_menu SET link='$valor' where nome = $nome";
+        $result = mysql_query($sql);
+
+        if(mysql_num_rows($result) > 0) {
+            echo 'já registrado';
+        } else {
+            $insert = mysqli_query($conn, "INSERT INTO ideal_menu(nome, texto) VALUES('". $nome ."', '". $valor ."')"); 
+        }
+        
+        
+        
+     }
+}
+if($sub != ""){
+    echo "sdasdad";
+}
+
+sleep(2);
+mysqli_close($conn);
+if($insert) {
+	print "<strong>Parabéns!</strong> Sua alteração foi salva";
+}else {
+	print "<strong>Erro!</strong> " . mysqli_error($conn);
+}
+
+?>
